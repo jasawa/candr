@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>mid-century modern style html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto+Condensed:300" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--<script src="main.js"></script> -->
+</head>
+
+<style>
+    body {
+        background-color: pink;
+    }
+
+    /*h4 {
+        color: blue;
+    }*/
+
+    #telephone {
+        border-radius: 40px;
+        background-color: olive;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 10px 0px 10px 0px;
+        color:mintcream;
+    }
+
+
+</style>
+
+
+<body>
+    <div class="container-fluid bg-warning p-5">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="animated jello card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                
+            </div>
+            <div class="col-sm">
+                <div class="animated bounceInDown">
+                    <div id="telephone">
+                        <h4 class="text-center">Phone:(800)555-5555</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-warning p-5">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body" id="testCase">
+                        This is some text within a card body.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                
+            </div>
+            <div class="col-sm">
+                <div class="card" id="cardCard">
+                    <div class="animated bounceInDown card-body rounded-circle text-white bg-primary p-5">
+                        <h4 class="text-center">This is some text within a card body.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--  Add button to test -->
+
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button id="mySubmitButton" type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+
+    <!-- Nav Bar -->
+<div class="animated bounceInRight navagation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="imagescroll.html">Sur Mer Travel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="zomato.html">Trending Restaurants</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="livevideo.html">Weather</a>
+          </li>
+          <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+              </li>
+           
+        </ul>
+        
+      </div>
+    </div>
+    </nav>
+    </div>
+
+    <div class="myOne container bg-primary text-white" id="containerOne">container one</div>
+<br>
+<br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script>
+            $(function () {
+                // This is the click function  When "submit" button is clicked, then containerOne animates
+                $("#mySubmitButton").on("click", function() {
+                    animate("#cardCard", "zoomOutRight");
+                    return false;
+                })
+
+                // This is the animate function Note: these are my variables and function name
+                // add animated and animationType to the class
+                function animate(element, animationType) {
+                   $(element).addClass("animated " + animationType);
+                    // after 5 seconds remove the class animated and animationType
+                    var weWait = setTimeout(function() {
+                        $(element).removeClass("animated " + animationType);
+                    }, 5000);
+                }
+
+            })
+
+        </script>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+    
+</body>
+</html>
