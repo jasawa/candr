@@ -19,7 +19,8 @@
 
 <style>
     body {
-        background-color: gold;
+        background-image: url("images/snowflakes.png");
+        /*background-color: gold;*/
     }
 
     /*h4 {
@@ -36,14 +37,17 @@
     #buttons {
         text-align: center;
     }
+    #mybutton {
+        box-shadow: 3px 5px darkgoldenrod;
+    }
 
 </style>
 
 
 <body>
-    <div class="container bg-success p-5">
-    </div>
-    <div class="container-fluid bg-danger p-5">
+    <!--<div class="container bg-success p-5">
+    </div>-->
+    <div class="container-fluid bg-danger p-5 mt-5">
         <div class="row">
             <div class="col-sm">
                 <div class="card">
@@ -89,19 +93,19 @@
 
     </div>
 <!--  Add button to test -->
-<div class="container-fluid bg-danger p-5">
+<div class="container-fluid bg-danger p-5 mb-5 mt-5">
     <div class="row">
         <div class="col-sm"></div>
         <div class="col-sm animated fadeInDownBig slow delay-5s" id="buttons">
             <!--<button id="mySubmitButton1" type="submit" class="btn btn-success">Connor Ready!</button>
             <button id="mySubmitButton2" type="submit" class="btn btn-success">Rory Set!</button>-->
-            <a href="https://www.vans.com/custom-shoes.html" target="_blank" class="btn btn-warning text-center"><h3>Click this button to see your present!</h3></a>
+            <a href="https://www.vans.com/custom-shoes.html" target="_blank" class="btn btn-warning text-center" id="mybutton"><h4>Click this button to see your present!</h4></a>
         </div>
         <div class="col-sm"></div>
     </div>
 </div>
-<div class="container bg-success p-5">
-</div>
+<!--<div class="container bg-success p-5">
+</div>-->
 
 
 <!-- The javascript below is commented out because it is not needed since buttons above are commented out 
